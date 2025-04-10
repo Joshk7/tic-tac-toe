@@ -6,11 +6,6 @@
     box-sizing: border-box;
 }
 
-* {
-    /* margin: 0; */
-    padding: 0;
-}
-
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
@@ -69,4 +64,18 @@ h6 {
 .body {
     font: 500 0.875rem / normal "Outfit";
     letter-spacing: 0.055rem;
+}
+
+.dark-navy-filter {
+    filter: brightness(0) saturate(100%) invert(17%) sepia(18%) saturate(765%)
+        hue-rotate(157deg) brightness(94%) contrast(102%);
+}
+
+.silver-filter {
+    filter: brightness(0) saturate(100%) invert(81%) sepia(15%) saturate(295%)
+        hue-rotate(153deg) brightness(90%) contrast(93%);
+}
+
+.custom-shadow {
+    box-shadow: 0, -0.5rem, 0, 0, var(--dark-navy);
 }
