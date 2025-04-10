@@ -76,6 +76,14 @@ h6 {
         hue-rotate(153deg) brightness(90%) contrast(93%);
 }
 
-.custom-shadow {
-    box-shadow: 0, -0.5rem, 0, 0, var(--dark-navy);
+.main-shadow {
+    box-shadow: 0 0.5rem 0 0 #10212A;
+}
+
+.yellow-shadow {
+    box-shadow: 0 0.5rem 0 0 #CC8B13;
+}
+
+.blue-shadow {
+    box-shadow: 0 0.5rem 0 0 #118C87;
 }

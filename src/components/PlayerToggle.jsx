@@ -20,7 +20,7 @@ const PlayerToggle = () => {
                 }}
                 className={clsx(
                     playerX && "bg-[var(--silver)]",
-                    "flex-1 block w-full p-3 rounded-[0.625rem]"
+                    "flex-1 block w-full p-3 rounded-[0.625rem] transition-all duration-500 cursor-pointer"
                 )}
                 htmlFor="choose-x"
             >
@@ -41,7 +41,7 @@ const PlayerToggle = () => {
                 }}
                 className={clsx(
                     !playerX && "bg-[var(--silver)]",
-                    "flex-1 block w-full p-3 rounded-[0.625rem]"
+                    "flex-1 block w-full p-3 rounded-[0.625rem] transition-all duration-500 cursor-pointer"
                 )}
                 htmlFor="choose-o"
             >

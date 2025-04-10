@@ -1,6 +1,4 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import NewGame from "./components/NewGame";
 
 const App = () => {
@@ -12,6 +10,8 @@ const App = () => {
         ["", "", ""]
     ]);
 
+    console.log(playing, setPlaying, singlePlayer, setSinglePlayer, board, setBoard);
+    
     if (playing) {
         console.log("playing!");
     } else {
