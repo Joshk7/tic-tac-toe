@@ -1,22 +1,11 @@
 import clsx from "clsx";
-import { useState } from "react";
 
-const PlayerToggle = () => {
-    const [playerX, setPlayerX] = useState(false);
-
-    const handlePressX = () => {
-        setPlayerX(true);
-    };
-
-    const handlePressO = () => {
-        setPlayerX(false);
-    };
-
+const PlayerToggle = ({ playerX, setPlayerX }) => {
     return (
         <fieldset className="mt-6 mb-4 bg-[var(--dark-navy)] relative p-2 flex gap-x-2 rounded-[0.625rem]">
             <button
                 onClick={() => {
-                    handlePressX();
+                    setPlayerX(true);
                 }}
                 className={clsx(
                     playerX && "bg-[var(--silver)]",
@@ -37,7 +26,7 @@ const PlayerToggle = () => {
             </button>
             <button
                 onClick={() => {
-                    handlePressO();
+                    setPlayerX(false);
                 }}
                 className={clsx(
                     !playerX && "bg-[var(--silver)]",

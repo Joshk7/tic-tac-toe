@@ -1,6 +1,6 @@
 import PlayerToggle from "./PlayerToggle";
 
-const NewGame = () => {
+const NewGame = ({ playerX, setPlayerX }) => {
     return (
         <section className="flex flex-col gap-y-10">
             <div className="flex justify-center gap-x-2">
@@ -19,7 +19,7 @@ const NewGame = () => {
             </div>
             <div className="bg-[var(--semi-dark-navy)] p-6 rounded-2xl main-shadow">
                 <h1 className="uppercase heading-xs">Pick Player 1's Mark</h1>
-                <PlayerToggle />
+                <PlayerToggle playerX={playerX} setPlayerX={setPlayerX}/>
                 <p className="uppercase body">Remember: X goes first</p>
             </div>
             <div className="flex flex-col gap-y-6">
